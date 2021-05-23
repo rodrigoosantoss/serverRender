@@ -1,0 +1,39 @@
+{{!-- <button type="button" class="btn btn-primary">Primary</button> --}}
+
+
+<html>
+<head>
+<title>Bootstrap Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Inclui as bibliotecas do Bootstrap -->
+<link rel="stylesheet" type="text/css" href="<?php echo sc_url_library('prj', 'bootstrap-3.3.2-dist', 'css/bootstrap.min.css'); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo sc_url_library('prj', 'bootstrap-3.3.2-dist', 'css/style1.css'); ?>" />
+</head>
+<body>
+
+
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-4 col-md-offset-4">
+<h1 class="text-center login-title">Acesso ADM</h1>
+<div class="account-wall">
+{{!-- <img class="profile-img" src="https://lh3.googleusercontent.com/-OJ26yjLQ8mo/AAAAAAAAAAI/AAAAAAAAAHg/9aw8LXIfn5I/s120-c/photo.jpg?sz=120" alt=""> --}}
+<form class="form-signin" method="post">
+<input type="text" name="login" class="form-control" id="form-login" placeholder="Email" required autofocus>
+<input type="password" name="password" class="form-control" id="form-password" placeholder="Password" required>
+<span role="alert" class="error-msg" id="errormsg_0_Passwd"><?php echo $str_error_msg; ?></span>
+<input type="submit" value="Sign in" class="btn btn-lg btn-primary btn-block" />
+<label class="checkbox pull-left">
+<br><input type="checkbox" value="remember-me">
+Remember me
+</label>
+<br><a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+</form>
+</div>
+<a href="#" class="text-center new-account">Create an account </a>
+</div>
+</div>
+</div>
+</body>
+</html>
+<?php // Fim de layout da página de Login.
